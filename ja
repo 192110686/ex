@@ -1,0 +1,406 @@
+//INDEX.HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Example Online Train Ticket Booking System</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+   background-image: url('http://getwallpapers.com/wallpaper/full/2/1/f/364301.jpg');
+   background-size:cover;
+   background-position: center;
+}
+   </style>
+</head>
+<body>	
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	<h1>ONLINE TRAIN TICKET BOOKING SYSTEM</h1>
+    <div class="about">
+        <h2>About Us</h2>
+        <p>Example Online Shopping System is a platform where you can buy and sell products online. We offer a wide range of products in various categories. Our mission is to provide a seamless and convenient shopping experience to our customers.</p>
+    </div>
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@example.com</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Address: 123 Example Street, Example City, EX 12345</p>
+    </div>
+</body>
+</html>
+
+     
+     //HOME.HTML
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Online Train Ticket Booking System</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		 body {
+    background-image: url('http://getwallpapers.com/wallpaper/full/2/1/f/364301.jpg');
+    background-size: cover;
+    background-position: center;
+}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<h1>Welcome to Online Train Ticket Booking System</h1>
+		<p>Find and book train tickets online with ease.</p>
+		<h2>Book a Ticket</h2>
+		<form action="book.php" method="post">
+			<label for="date">Date of Journey:</label>
+			<input type="date" name="date" id="date" required>
+			<br>
+			<br>
+			<br>
+			<label for="source">Origin Station:</label>
+			<input type="text" name="source" id="source" required>
+			<br>
+			<label for="destination">Destination Station:</label>
+			<input type="text" name="destination" id="destination" required>
+			<br>
+			<br>
+			<label for="class">Class Type:</label>
+			<select name="class" id="class" required>
+				<option value="AC">AC</option>
+				<option value="Sleeper">Sleeper</option>
+				<option value="ChairCar">Chair Car</option>
+			</select>
+			<br>
+			<label for="passengers">Passenger Details:</label>
+			<textarea name="passengers" id="passengers" required></textarea>
+			<br>
+			<button type="submit">Book Ticket</button>
+		</form>
+		<h2>Check PNR Status</h2>
+		<form action="pnr.php" method="get">
+			<label for="pnr">PNR No.:</label>
+			<input type="text" name="pnr" id="pnr" required>
+			<br>
+			<button type="submit">Check PNR Status</button>
+		</form>
+	</div>
+</body>
+</html>
+
+    //ABOUT.HTML
+    
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Online Train Ticket Booking System</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="about">
+    <h2>About Us</h2>
+    <p>Example Online Shopping System is a platform where you can buy and sell products online. We offer a wide range of products in various categories. Our mission is to provide a seamless and convenient shopping experience to our customers.</p>
+</div>
+</body>
+
+
+    //CONTACT.HTML
+
+    <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Online Train Ticket Booking System</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@example.com</p>
+    <p>Phone: 123-456-7890</p>
+    <p>Address: 123 Example Street, Example City, EX 12345</p>
+</div>
+</body>
+
+    //LOGIN.HTML
+
+    <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Online Train Ticket Booking System</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Online Shopping System</h1>
+    <form action="login.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+    </body>
+
+    //REGISTER.HTML
+
+    <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Online Train Ticket Booking System</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Online Shopping System</h1>
+    <form action="login.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    </div>
+    </body>
+
+    //CSS
+
+    body {
+	background-color: #e0e0e0;
+	font-family: Arial, sans-serif;
+}
+
+nav {
+	background-color: #333;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul {	
+	margin: 40px;
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 70px;
+
+}
+
+nav ul li a {
+	color: #fff;
+}
+
+.container {
+	width: 400px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 40px;
+	border-radius: 10px;
+	margin-top: 100px;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 50px;
+	color: green;
+	font-weight: bold;
+}
+
+h2 {
+	color: #333;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+label {
+	display: block;
+	margin-bottom: 20px;
+	color: #333;
+	font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 40px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: #333;
+	font-weight: bold;
+}
+
+button[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 2px solid #4CAF50;
+	font-weight: bold;
+}
+
+button[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+.about {
+	background-color:hwb(114 8% 76%);
+	padding: 20px;
+	margin-top: 200px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.about h2 {
+	color: #ef1010;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+.about p {
+	color:coral;
+	margin-bottom: 20px;
+}
+
+//PNR.PHP
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>PNR Status</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<h1>PNR Status</h1>
+		<form action="pnr.php" method="get">
+			<label for="pnr">PNR No.:</label>
+			<input type="text" name="pnr" id="pnr" required>
+			<br>
+			<button type="submit">Check PNR Status</button>
+		</form>
+		<?php
+		// Define the PNR number
+		$pnr_number = $_GET['pnr'];
+
+		// Define the URL for the Indian Railways PNR enquiry API
+		$url = "https://api.railwayapi.com/v2/pnr-status/pnr/$pnr_number/apikey/your_api_key/";
+
+		// Initialize cURL
+		$ch = curl_init();
+
+		// Set the cURL options
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+		// Execute the cURL request
+		$response = curl_exec($ch);
+
+		// Close the cURL session
+		curl_close($ch);
+
+		// Decode the JSON response
+		$data = json_decode($response, true);
+
+		// Check if the PNR number is valid
+		if ($data['response_code'] == 200) {
+			// Display the PNR status and other details
+			echo "<p>PNR Number: $pnr_number</p>";
+			echo "<p>Train Name: " . $data['train']['name'] . "</p>";
+			echo "<p>Train Number: " . $data['train']['number'] . "</p>";
+			echo "<p>From: " . $data['from_station']['name'] . "</p>";
+			echo "<p>To: " . $data['to_station']['name'] . "</p>";
+			echo "<p>Date: " . $data['chart_prepared'] . "</p>";
+			echo "<p>Class: " . $data['current_booking']['class'] . "</p>";
+			echo "<p>Seat Number: " . $data['current_booking']['booked_seats'] . "</p>";
+			echo "<p>Passenger Name: " . $data['passengers'][0]['name'] . "</p>";
+			echo "<p>Passenger Age: " . $data['passengers'][0]['age'] . "</p>";
+			echo "<p>Passenger Gender: " . $data['passengers'][0]['gender'] . "</p>";
+			echo "<p>Passenger Status: " . $data['passengers'][0]['current_status'] . "</p>";
+		} else {
+			// Display an error message if the PNR number is invalid
+			echo "<p>The PNR number $pnr_number is invalid.</p>";
+		}
+		?>
+	</div>
+</body>
+</html>
+
+      //LOGIN.PHP
+
+      <?php
+error_reporting(E_ALL);
+if(!defined('DB_SERVER')){
+    require_once("C:\xampp\htdocs\newfolder\book.php");
+}
+class DBConnection{
+
+    private $host = DB_SERVER;
+    private $username = DB_USERNAME;
+    private $password = DB_PASSWORD;
+    private $database = DB_NAME;
+    
+    public $conn;
+    
+    public function __construct(){
+
+        if (!isset($this->conn)) {
+            
+            $this->conn = new mysqli($this->host, $this->username, $this->password, $this->database);
+            
+            if (!$this->conn) {
+                echo 'Cannot connect to database server';
+                exit;
+            }            
+        }    
+        
+    }
+    public function __destruct(){
+        $this->conn->close();
+    }
+}
+?>
+
+
+
+
+
+     
+
+     
